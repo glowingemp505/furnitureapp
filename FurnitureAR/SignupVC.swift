@@ -7,8 +7,10 @@
 //
 
 import UIKit
-
-class SignupVC: UIViewController {
+import FirebaseAuth
+import FirebaseFirestore
+import Firebase
+class SignupVC: BaseVC {
 
     @IBOutlet weak var passwordimg : UIButton!
     @IBOutlet weak var passwordlbl : UITextField!
@@ -31,6 +33,42 @@ class SignupVC: UIViewController {
     @IBAction func backbtn(_ sender:UIButton)
     {
         self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func signupbtn(_ sender:UIButton)
+    {
+        if(emaillbl.text == "" || passwordlbl.text == "" )
+        {
+            self.showTool(msg: "Fields Empty", state: .error)
+            
+        }
+        else
+        {
+            Auth.auth().createUser(withEmail: emaillbl.text ?? "", password: passwordlbl.text ?? "") { Result, err in
+                if err != nil
+                {
+                    self.showTool(msg: "Invalid Data", state: .error)
+                }
+                else
+                {
+                    print("No Error")
+                    let bd = Firestore.firestore()
+                    bd.collection("users").addDocument(data: ["first name":self.usernamebl.text , "lastname":self.namelbl.text, "uid": Result!.user.uid]) { (error) in
+                        if error != nil
+                        {
+                            self.showTool(msg: "Invalid Data", state: .error)
+                        }
+                        else
+                        {
+                            print("no error")
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                            self.navigationController?.pushViewController(vc, animated: true)
+                        }
+                    }
+                   
+                }
+            }
+        }
+       
     }
     @IBAction func pwdbtn(_ sender:UIButton)
     {

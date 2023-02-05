@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fhp-uN-clW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="737"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YMl-CY-ASu">
                                     <size key="itemSize" width="375" height="283"/>
@@ -130,6 +130,7 @@
                                             <outlet property="furnitureImage" destination="53i-Vg-hrl" id="jrR-2u-9RF"/>
                                             <outlet property="heartbtn" destination="0Ee-qV-eJD" id="zVp-H9-dT8"/>
                                             <outlet property="heartimg" destination="0Ee-qV-eJD" id="Pyk-az-C4R"/>
+                                            <outlet property="lineview" destination="MqA-qd-wu4" id="t9p-D7-X6Q"/>
                                             <outlet property="priceLabel" destination="6FG-Rc-Dst" id="ogr-O2-Fq3"/>
                                         </connections>
                                     </collectionViewCell>
@@ -139,7 +140,7 @@
                         <viewLayoutGuide key="safeArea" id="lNc-b0-C8y"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="fhp-uN-clW" secondAttribute="bottom" id="Pk9-8Y-9il"/>
+                            <constraint firstAttribute="bottom" secondItem="fhp-uN-clW" secondAttribute="bottom" constant="-70" id="Pk9-8Y-9il"/>
                             <constraint firstItem="fhp-uN-clW" firstAttribute="top" secondItem="vx9-3I-NnC" secondAttribute="top" id="UFf-Ki-O5M"/>
                             <constraint firstItem="fhp-uN-clW" firstAttribute="leading" secondItem="lNc-b0-C8y" secondAttribute="leading" id="cFx-HQ-FL1"/>
                             <constraint firstItem="fhp-uN-clW" firstAttribute="trailing" secondItem="lNc-b0-C8y" secondAttribute="trailing" id="r14-oo-aKR"/>
@@ -185,9 +186,12 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="AACornerRadius">
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="btn:" destination="Mh3-4u-ucd" eventType="touchUpInside" id="FfY-SU-wng"/>
+                                                            <action selector="signupbtn:" destination="Mh3-4u-ucd" eventType="touchUpInside" id="cCn-gm-8Kr"/>
                                                         </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="wGm-Pp-fTE">
@@ -670,6 +674,9 @@
                                                                 <state key="normal" title="Forgot password?">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="forgotbtn:" destination="zUE-aL-jrl" eventType="touchUpInside" id="45b-Oc-uqA"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNK-Md-375">
                                                                 <rect key="frame" x="20" y="299" width="275" height="60"/>

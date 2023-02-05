@@ -16,6 +16,7 @@ class FurnitureTVC: UICollectionViewCell{
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var arBtn: UIButton!
     @IBOutlet weak var heartbtn: UIButton!
+    @IBOutlet weak var lineview: UIView!
     
     
 }
@@ -25,7 +26,7 @@ protocol TypeDelegate
     func objectType(desc : String)
 }
 
-class ModalViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ModalViewController: BaseVC, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var delegate : TypeDelegate?
     var check1 = 0
@@ -36,7 +37,7 @@ class ModalViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     let desc = ["Sofa", "Dragon", "Table", "Chair","..."]
     let price = ["RS-50000", "RS-8000", "RS-2000", "RS-4500","..."]
-    let img = ["blacksofa.jpg", "dragon.jpg", "table.jpg", "chair.jpg" , "icons8-coming-soon-64"]
+    let img = ["blacksofa.jpg", "dragon.jpg", "table.jpg", "chair.jpg" , "121"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return desc.count
@@ -76,9 +77,11 @@ class ModalViewController: UIViewController, UICollectionViewDelegate, UICollect
             cell.descriptionLabel.isHidden = true
             cell.arBtn.isHidden = true
             cell.cartimg.isHidden = true
+            cell.lineview.isHidden = true
         }
         else
         {
+            cell.lineview.isHidden = false
             cell.descriptionLabel.isHidden = false
             cell.arBtn.isHidden = false
             cell.heartimg.isHidden = false
@@ -105,6 +108,7 @@ class ModalViewController: UIViewController, UICollectionViewDelegate, UICollect
         cell.arBtn.addTarget(self, action:#selector(arBtnPressed(sender:)), for: .touchUpInside)
         cell.heartbtn.tag = indexPath.row
         cell.heartbtn.addTarget(self, action:#selector(heartPressed(sender:)), for: .touchUpInside)
+        cell.cartimg.addTarget(self, action:#selector(cartPressed(sender:)), for: .touchUpInside)
         return cell
     }
     
@@ -114,15 +118,21 @@ class ModalViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     @objc func heartPressed(sender : UIButton) {
         
-        if check1 == 0
-        {
-            check1 = 1
-        }
-        else
-        {
-            check1 = 0
-        }
-        self.product.reloadData()
+//        if check1 == 0
+//        {
+//            check1 = 1
+//        }
+//        else
+//        {
+//            check1 = 0
+//        }
+//        self.product.reloadData()
+//
+        showTool(msg: "Coming Soon", state: .error)
+    }
+    @objc func cartPressed(sender : UIButton) {
+        
+        showTool(msg: "Coming Soon", state: .error)
         
     }
 

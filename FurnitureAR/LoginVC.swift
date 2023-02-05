@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 
-class LoginVC: UIViewController {
+class LoginVC: BaseVC {
     
     @IBOutlet weak var passwordimg : UIButton!
     @IBOutlet weak var passwordlbl : UITextField!
@@ -23,13 +26,39 @@ class LoginVC: UIViewController {
     
     @IBAction func btn(_ sender:UIButton)
     {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+
+        if(emaillbl.text == "" || passwordlbl.text == "" )
+        {
+            self.showTool(msg: "Fields Empty", state: .error)
+            
+        }
+        else
+        {
+           
+            Auth.auth().signIn(withEmail: emaillbl.text ?? "", password: passwordlbl.text ?? "") { result, error in
+                if error != nil
+                {
+                    self.showTool(msg: "Invalid Email/Password", state: .error)
+                }
+                else
+                {
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                            self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+
+        }
+        
+        
     }
     @IBAction func signupbtn(_ sender:UIButton)
     {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignupVC") as! SignupVC
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func forgotbtn(_ sender:UIButton)
+    {
+        self.showTool(msg: "Coming Soon", state: .error)
     }
     @IBAction func pwdbtn(_ sender:UIButton)
     {

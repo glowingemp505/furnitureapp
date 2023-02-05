@@ -9,6 +9,9 @@ target 'FurnitureAR' do
   pod 'IQKeyboardManagerSwift'
 pod 'FirebaseAnalytics'
 pod 'Firebase/Auth'
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+ pod 'SFSymbols'
 
-
+pod 'Loaf'
 end

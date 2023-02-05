@@ -6,7 +6,11 @@
 //  Copyright © 2022 sameeramjad. All rights reserved.
 //
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

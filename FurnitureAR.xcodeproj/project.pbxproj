@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09BA911900717D008F504A37 /* Pods_FurnitureAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D52EA7496F7C2D0BF2F3A5C /* Pods_FurnitureAR.framework */; };
 		18142972206101710052CD12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18142971206101710052CD12 /* AppDelegate.swift */; };
 		18142974206101710052CD12 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 18142973206101710052CD12 /* art.scnassets */; };
 		18142976206101710052CD12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18142975206101710052CD12 /* ViewController.swift */; };
@@ -23,9 +24,9 @@
 		18BF6BC520662AA000807B91 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF6BC420662AA000807B91 /* ModalViewController.swift */; };
 		270D2CDF297AA01D00ABF605 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D2CDE297AA01D00ABF605 /* LoginVC.swift */; };
 		270D2CE1297AA03900ABF605 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D2CE0297AA03900ABF605 /* SignupVC.swift */; };
-		270D2CE5297AA5A000ABF605 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D2CE4297AA5A000ABF605 /* Extension.swift */; };
 		2768F3EF29802684000B1CAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2768F3EE29802684000B1CAE /* GoogleService-Info.plist */; };
-		96EA97E8497674BBF4EE642D /* Pods_FurnitureAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39EF98439597B6905816D09 /* Pods_FurnitureAR.framework */; };
+		27E667AC2990314200A34D09 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E667AB2990314200A34D09 /* Extension.swift */; };
+		27E667AE2990375700A34D09 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E667AD2990375700A34D09 /* BaseVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +48,12 @@
 		18BF6BC420662AA000807B91 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		270D2CDE297AA01D00ABF605 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		270D2CE0297AA03900ABF605 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
-		270D2CE4297AA5A000ABF605 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = "../../../Documents/GitHub/Dare-The-App-IOS/daretheapp/Delegates/Extension.swift"; sourceTree = "<group>"; };
 		2768F3EE29802684000B1CAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4B1D070288EFBC61C21E1709 /* Pods-FurnitureAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurnitureAR.debug.xcconfig"; path = "Target Support Files/Pods-FurnitureAR/Pods-FurnitureAR.debug.xcconfig"; sourceTree = "<group>"; };
-		855EF1E46CB0D9D65EA8C446 /* Pods-FurnitureAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurnitureAR.release.xcconfig"; path = "Target Support Files/Pods-FurnitureAR/Pods-FurnitureAR.release.xcconfig"; sourceTree = "<group>"; };
-		F39EF98439597B6905816D09 /* Pods_FurnitureAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FurnitureAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E667AB2990314200A34D09 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		27E667AD2990375700A34D09 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		8D52EA7496F7C2D0BF2F3A5C /* Pods_FurnitureAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FurnitureAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD20999BCDEB8535F47D7801 /* Pods-FurnitureAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurnitureAR.release.xcconfig"; path = "Target Support Files/Pods-FurnitureAR/Pods-FurnitureAR.release.xcconfig"; sourceTree = "<group>"; };
+		EE9E0300F17350BC00DDE1A2 /* Pods-FurnitureAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurnitureAR.debug.xcconfig"; path = "Target Support Files/Pods-FurnitureAR/Pods-FurnitureAR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96EA97E8497674BBF4EE642D /* Pods_FurnitureAR.framework in Frameworks */,
+				09BA911900717D008F504A37 /* Pods_FurnitureAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +74,7 @@
 				18142970206101710052CD12 /* FurnitureAR */,
 				1814296F206101710052CD12 /* Products */,
 				39D9C781B3FFF8DCAA4771E9 /* Pods */,
-				50666CCAEE965F9D74DA6835 /* Frameworks */,
+				5CB328A1FEA4194BC8976FEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +89,9 @@
 		18142970206101710052CD12 /* FurnitureAR */ = {
 			isa = PBXGroup;
 			children = (
-				270D2CE4297AA5A000ABF605 /* Extension.swift */,
+				27E667AD2990375700A34D09 /* BaseVC.swift */,
 				2768F3EE29802684000B1CAE /* GoogleService-Info.plist */,
+				27E667AB2990314200A34D09 /* Extension.swift */,
 				182CCE4120AD89D900AC49B9 /* Presentation */,
 				182CCE4320AD89D900AC49B9 /* Transitioning */,
 				18142971206101710052CD12 /* AppDelegate.swift */,
@@ -129,16 +132,16 @@
 		39D9C781B3FFF8DCAA4771E9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4B1D070288EFBC61C21E1709 /* Pods-FurnitureAR.debug.xcconfig */,
-				855EF1E46CB0D9D65EA8C446 /* Pods-FurnitureAR.release.xcconfig */,
+				EE9E0300F17350BC00DDE1A2 /* Pods-FurnitureAR.debug.xcconfig */,
+				DD20999BCDEB8535F47D7801 /* Pods-FurnitureAR.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		50666CCAEE965F9D74DA6835 /* Frameworks */ = {
+		5CB328A1FEA4194BC8976FEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F39EF98439597B6905816D09 /* Pods_FurnitureAR.framework */,
+				8D52EA7496F7C2D0BF2F3A5C /* Pods_FurnitureAR.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,11 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18142982206101710052CD12 /* Build configuration list for PBXNativeTarget "FurnitureAR" */;
 			buildPhases = (
-				8F72A0DDAFC5942DBD9216F1 /* [CP] Check Pods Manifest.lock */,
+				01E90D275DC9EE301F5D444D /* [CP] Check Pods Manifest.lock */,
 				1814296A206101710052CD12 /* Sources */,
 				1814296B206101710052CD12 /* Frameworks */,
 				1814296C206101710052CD12 /* Resources */,
-				FEA0405A1C2656A9799CCCC8 /* [CP] Embed Pods Frameworks */,
+				C72919368FCA91EE69AC031D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,7 +219,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8F72A0DDAFC5942DBD9216F1 /* [CP] Check Pods Manifest.lock */ = {
+		01E90D275DC9EE301F5D444D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,33 +241,51 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FEA0405A1C2656A9799CCCC8 /* [CP] Embed Pods Frameworks */ = {
+		C72919368FCA91EE69AC031D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FurnitureAR/Pods-FurnitureAR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseFirestore/FirebaseFirestore.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Libuv-gRPC/uv.framework",
+				"${BUILT_PRODUCTS_DIR}/Loaf/Loaf.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/SFSymbols/SFSymbols.framework",
+				"${BUILT_PRODUCTS_DIR}/abseil/absl.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreInternal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseFirestore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/uv.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Loaf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFSymbols.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/absl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +303,12 @@
 				18142976206101710052CD12 /* ViewController.swift in Sources */,
 				18142972206101710052CD12 /* AppDelegate.swift in Sources */,
 				182CCE4820AD89D900AC49B9 /* HalfModalInteractiveTransition.swift in Sources */,
-				270D2CE5297AA5A000ABF605 /* Extension.swift in Sources */,
+				27E667AC2990314200A34D09 /* Extension.swift in Sources */,
 				182CCE4A20AD89D900AC49B9 /* HalfModalTransitioningDelegate.swift in Sources */,
 				270D2CDF297AA01D00ABF605 /* LoginVC.swift in Sources */,
 				182CCE4C20AD986B00AC49B9 /* Furniture.swift in Sources */,
 				182CCE4720AD89D900AC49B9 /* HalfModalPresentationController.swift in Sources */,
+				27E667AE2990375700A34D09 /* BaseVC.swift in Sources */,
 				18BF6BC520662AA000807B91 /* ModalViewController.swift in Sources */,
 				182CCE4020AD894200AC49B9 /* AppNavController.swift in Sources */,
 				270D2CE1297AA03900ABF605 /* SignupVC.swift in Sources */,
@@ -433,7 +455,7 @@
 		};
 		18142983206101710052CD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B1D070288EFBC61C21E1709 /* Pods-FurnitureAR.debug.xcconfig */;
+			baseConfigurationReference = EE9E0300F17350BC00DDE1A2 /* Pods-FurnitureAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,7 +471,7 @@
 		};
 		18142984206101710052CD12 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 855EF1E46CB0D9D65EA8C446 /* Pods-FurnitureAR.release.xcconfig */;
+			baseConfigurationReference = DD20999BCDEB8535F47D7801 /* Pods-FurnitureAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

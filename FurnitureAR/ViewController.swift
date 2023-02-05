@@ -13,8 +13,6 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate, TypeDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
-    // pull 3
-    
     var selectedNode = SCNNode()
     var object: String!
     var selectedObjName: String?
