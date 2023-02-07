@@ -38,7 +38,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, TypeDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.isNavigationBarHidden = true
+        UserDefaults.standard.setValue(1, forKey: "Login")
         addBtn.layer.cornerRadius = 25
         addBtn.clipsToBounds = true
 
@@ -173,13 +174,17 @@ class ViewController: UIViewController, ARSCNViewDelegate, TypeDelegate {
                 sceneView.scene.rootNode.addChildNode(selectedNode)
                 
             }
-            else if object == "Sofa Chair"{
-                
+
+            else if object == "Dragon"{
+
                 guard let carScene = SCNScene(named: "art.scnassets/Dragon.dae") else { return }
+
                 let carSceneChildNodes = carScene.rootNode.childNodes
-                let fadein = SCNAction.scale(by: 5.0, duration: 0.75)
-                selectedNode.scale = SCNVector3(0.0015, 0.0015, 0.0015)
-                selectedNode.runAction(fadein)
+                               let fadein = SCNAction.scale(by: 5.0, duration: 0.75)
+                selectedNode.scale = SCNVector3(0.0002, 0.0002, 0.0002)
+                               
+                               selectedNode.runAction(fadein)
+                               
                 
                 for childNode in carSceneChildNodes {
                     selectedNode.addChildNode(childNode)

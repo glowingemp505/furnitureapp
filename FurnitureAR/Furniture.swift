@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Furniture.swift
 //  FurnitureAR
 //
 //  Created by sameeramjad.

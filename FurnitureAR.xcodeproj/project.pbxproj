@@ -462,7 +462,7 @@
 				DEVELOPMENT_TEAM = J898DPF329;
 				INFOPLIST_FILE = FurnitureAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hustle.FurnitureAR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucp.com;
 				PRODUCT_NAME = "fyp-Ar(UCP)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,7 +478,7 @@
 				DEVELOPMENT_TEAM = J898DPF329;
 				INFOPLIST_FILE = FurnitureAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hustle.FurnitureAR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucp.com;
 				PRODUCT_NAME = "fyp-Ar(UCP)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

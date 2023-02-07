@@ -19,7 +19,7 @@ class LoginVC: BaseVC {
     var check = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.isNavigationBarHidden = true
         
     }
     

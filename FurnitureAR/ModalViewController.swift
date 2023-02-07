@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ModalViewController.swift
 //  FurnitureAR
 //
 //  Created by sameeramjad.
@@ -35,6 +35,7 @@ class ModalViewController: BaseVC, UICollectionViewDelegate, UICollectionViewDat
     var check4 = 0
     @IBOutlet weak var product: UICollectionView!
     
+    
     let desc = ["Sofa", "Dragon", "Table", "Chair","..."]
     let price = ["RS-50000", "RS-8000", "RS-2000", "RS-4500","..."]
     let img = ["blacksofa.jpg", "dragon.jpg", "table.jpg", "chair.jpg" , "121"]
@@ -42,7 +43,13 @@ class ModalViewController: BaseVC, UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return desc.count
     }
-    
+    @IBAction func logoutbtn(_ sender: UIButton)
+    {
+        UserDefaults.standard.set(0, forKey: "Login")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     func showAnimate()
     {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
